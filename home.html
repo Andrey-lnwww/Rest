@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220915101448">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220917004855">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,8 +28,8 @@
 								<ul class="menu__list">
 									<li class="menu__item"><a href="##" class="menu__link link">Главная</a></li>
 									<li class="menu__item"><a href="##" class="menu__link link" data-goto=".main-menu" data-goto-speed="1000">Меню</a></li>
-									<li class="menu__item"><a href="##" class="menu__link link menu__link--try">О нас</a></li>
-									<li class="menu__item"><a href="##" class="menu__link link menu__link--try" data-goto=".history" data-goto-speed="1000">Бронь</a></li>
+									<li class="menu__item"><a href="##" class="menu__link link">О нас</a></li>
+									<li class="menu__item"><a href="##" class="menu__link link" data-goto=".history" data-goto-speed="1000">Бронь</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -82,7 +82,9 @@
 			</div>
 		</header>
 		<main class="page">
-			<section data-prlx-mouse data-fullscreen class="page__welcome welcome">
+			<section data-fullscreen class="page__welcome welcome">
+				<div data-prlx-mouse class="welcome__background">
+				</div>
 				<div class="welcome__container">
 					<div class="welcome__main-wrapper">
 						<div class="welcome__content">
@@ -101,7 +103,7 @@
 				<div class="benefits__container">
 					<ul class="benefits__list">
 						<li class="benefits__item">
-							<div class="benefits__image"></div>
+							<div class="benefits__image benefits__anim--items"></div>
 							<h4 class="benefits__title">Магическая <span class="subtitle-color">Атмосфера</span></h4>
 							<p class="benefits__description">В нашем заведении царит магическая атмосфера
 								наполненная вкусными ароматами</p>
@@ -169,6 +171,7 @@
 					</div>
 				</div>
 				<div class="history__order order">
+					<div data-prlx-mouse data-prlx-cy="10000000" class="order__background"></div>
 					<div class="order__container">
 						<div class="order__content">
 							<h3 class="order__title">Отпразднуйте в одном из
@@ -382,15 +385,15 @@
 					<div class="gallery-dishes__main-wrapper">
 						<h3 class="gallery-dishes__title title">Галерея <span class="title-color title-key">Блюд</span></h3>
 						<div class="gallery-dishes__content">
-							<div class="gallery-dishes__column">
-								<div class="gallery-dishes__image-ibg gallery-dishes__image-big"><picture><source data-srcset="img/gallery-dishes/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/1.png" alt="Бокалы"></picture></div>
-								<div class="gallery-dishes__image-ibg"><picture><source data-srcset="img/gallery-dishes/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/2.png" alt="Чашка кофе"></picture></div>
-								<div class="gallery-dishes__image-ibg"><picture><source data-srcset="img/gallery-dishes/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/3.png" alt="Суп"></picture></div>
+							<div data-gallery class="gallery-dishes__column">
+								<a class="gallery-dishes__image-ibg gallery-dishes__image-big" href="img/gallery-dishes/1.png"><picture><source data-srcset="img/gallery-dishes/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/1.png" alt="Бокалы"></picture></a>
+								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/2.png"><picture><source data-srcset="img/gallery-dishes/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/2.png" alt="Чашка кофе"></picture></a>
+								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/3.png"><picture><source data-srcset="img/gallery-dishes/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/3.png" alt="Суп"></picture></a>
 							</div>
-							<div class="gallery-dishes__column">
-								<div class="gallery-dishes__image-ibg"><picture><source data-srcset="img/gallery-dishes/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/2.png" alt="Бокалы"></picture></div>
-								<div class="gallery-dishes__image-ibg"><picture><source data-srcset="img/gallery-dishes/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/3.png" alt="Чашка кофе"></picture></div>
-								<div class="gallery-dishes__image-ibg gallery-dishes__image-big"><picture><source data-srcset="img/gallery-dishes/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/1.png" alt="Суп"></picture></div>
+							<div data-gallery class="gallery-dishes__column">
+								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/2.png"><picture><source data-srcset="img/gallery-dishes/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/2.png" alt="Бокалы"></picture></a>
+								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/3.png"><picture><source data-srcset="img/gallery-dishes/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/3.png" alt="Чашка кофе"></picture></a>
+								<a class="gallery-dishes__image-ibg gallery-dishes__image-big" href="img/gallery-dishes/1.png"><picture><source data-srcset="img/gallery-dishes/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/1.png" alt="Бокалы"></picture></a>
 							</div>
 						</div>
 					</div>
@@ -400,10 +403,10 @@
 				<div class="chefs__container">
 					<div class="chefs__main-wrapper">
 						<h3 class="chefs__title title">Наши <span class="title-color">Повара</span></h3>
-						<div class="chefs__content">
-							<div class="chefs__image-ibg"><picture><source data-srcset="img/chefs/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/chefs/1.png" alt="Шеф-повар"></picture></div>
-							<div class="chefs__image-ibg"><picture><source data-srcset="img/chefs/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/chefs/2.png" alt="Шеф и пицца"></picture></div>
-							<div class="chefs__image-ibg"><picture><source data-srcset="img/chefs/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/chefs/3.png" alt="Шеф и курочка"></picture></div>
+						<div data-gallery class="chefs__content">
+							<a class="chefs__image-ibg" href="img/chefs/1.png"><picture><source data-srcset="img/chefs/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/chefs/1.png" alt="Шеф"></picture></a>
+							<a class="chefs__image-ibg" href="img/chefs/2.png"><picture><source data-srcset="img/chefs/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/chefs/2.png" alt="Шеф и пицца"></picture></a>
+							<a class="chefs__image-ibg" href="img/chefs/3.png"><picture><source data-srcset="img/chefs/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/chefs/3.png" alt="Шеф готовит"></picture></a>
 						</div>
 					</div>
 				</div>
@@ -411,11 +414,7 @@
 		</main>
 	</div>
 	<footer class="footer">
-		<!-- <picture><source data-srcset="img/secondary-bg.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/secondary-bg.png" alt=""></picture> -->
-		<div data-prlx-mouse data-fullscreen class="footer__image-ibg"><picture><source data-srcset="img/footer-bg.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/footer-bg.png" alt="Интерьер"></picture>
-		</div>
-		<div class="footer__container">
-
+		<div data-fullscreen class="footer__image-ibg"><picture><source data-srcset="img/footer-bg.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/footer-bg.png" alt="Интерьер"></picture>
 		</div>
 	</footer>
 	</div>
@@ -429,7 +428,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220915101448"></script>
+	<script src="js/app.min.js?_v=20220917004855"></script>
 </body>
 
 </html>
