@@ -6082,7 +6082,7 @@ PERFORMANCE OF THIS SOFTWARE.
         };
         const da = new DynamicAdapt("max");
         da.init();
-        const animItems = document.querySelectorAll(".--anim-items");
+        const animItems = document.querySelectorAll("._anim-items");
         if (animItems.length > 0) {
             window.addEventListener("scroll", animOnScroll);
             function animOnScroll() {
@@ -6093,11 +6093,12 @@ PERFORMANCE OF THIS SOFTWARE.
                     const animStart = 4;
                     let animItemPoint = window.innerHeight - animItemHeight / animStart;
                     if (animItemHeight > window.innerHeight) animItemPoint = window.innerHeight - window.innerHeight / animStart;
-                    if (pageYoffset > animItemOffset - animItemOffset && pageOffYset < animItemOffset + animItemHeight) animItem.classList.add("_active"); else animItem.classList.remove("_active");
+                    if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) animItem.classList.add("_active"); else if (!animItem.classList.contains("_anim-no-hide")) animItem.classList.remove("_active");
                 }
-                animOnScroll();
-                setTimeout((() => {}), 300);
             }
+            setTimeout((() => {
+                animOnScroll();
+            }), 300);
             function offset(el) {
                 const rect = el.getBoundingClientRect(), scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, scrollTop = window.pageYoffset || document.documentElement.scrollTop;
                 return {
