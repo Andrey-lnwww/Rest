@@ -681,14 +681,23 @@ h6 {
   background-image: url("../img/icons/Dish.svg");
   background-repeat: no-repeat;
   margin-bottom: 5px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .benefits__title {
   margin-bottom: 20px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .benefits__description {
   color: #656363;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 @supports (margin-bottom: clamp( 4.0625rem , 2.4039634146rem  +  8.2926829268vw , 8.3125rem )) {
