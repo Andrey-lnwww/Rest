@@ -652,11 +652,6 @@
             bodyUnlock();
             document.documentElement.classList.remove("menu-open");
         }
-        function functions_FLS(message) {
-            setTimeout((() => {
-                if (window.FLS) console.log(message);
-            }), 0);
-        }
         class MousePRLX {
             constructor(props, data = null) {
                 let defaultConfig = {
@@ -666,10 +661,7 @@
                 this.config = Object.assign(defaultConfig, props);
                 if (this.config.init) {
                     const paralaxMouse = document.querySelectorAll("[data-prlx-mouse]");
-                    if (paralaxMouse.length) {
-                        this.paralaxMouseInit(paralaxMouse);
-                        this.setLogging(`Проснулся, слежу за объектами: (${paralaxMouse.length})`);
-                    } else this.setLogging("Нет ни одного объекта. Сплю...zzZZZzZZz...");
+                    if (paralaxMouse.length) this.paralaxMouseInit(paralaxMouse);
                 }
             }
             paralaxMouseInit(paralaxMouse) {
@@ -706,9 +698,6 @@
                         }));
                     }
                 }));
-            }
-            setLogging(message) {
-                this.config.logging ? functions_FLS(`[PRLX Mouse]: ${message}`) : null;
             }
         }
         modules_flsModules.mousePrlx = new MousePRLX({});
@@ -748,8 +737,7 @@
                         behavior: "smooth"
                     });
                 }
-                functions_FLS(`[gotoBlock]: Юхуу...едем к ${targetBlock}`);
-            } else functions_FLS(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${targetBlock}`);
+            }
         };
         function ssr_window_esm_isObject(obj) {
             return null !== obj && "object" === typeof obj && "constructor" in obj && obj.constructor === Object;
@@ -6107,6 +6095,36 @@ PERFORMANCE OF THIS SOFTWARE.
                 };
             }
         }
+        let number = document.querySelector(".counter__number-1"), numberTop = number.getBoundingClientRect().top, start = +number.innerHTML, end = +number.dataset.max;
+        window.addEventListener("scroll", (function onScroll() {
+            if (window.pageYOffset > numberTop - window.innerHeight / 1.2) {
+                this.removeEventListener("scroll", onScroll);
+                var interval = setInterval((function() {
+                    number.innerHTML = ++start;
+                    if (start == end) clearInterval(interval);
+                }), 10);
+            }
+        }));
+        let number2 = document.querySelector(".counter__number-2"), numberTop2 = number2.getBoundingClientRect().top, start2 = +number2.innerHTML, end2 = +number2.dataset.max;
+        window.addEventListener("scroll", (function onScroll() {
+            if (window.pageYOffset > numberTop2 - window.innerHeight / 1.2) {
+                this.removeEventListener("scroll", onScroll);
+                var interval = setInterval((function() {
+                    number2.innerHTML = ++start2;
+                    if (start2 == end2) clearInterval(interval);
+                }), 10);
+            }
+        }));
+        let number3 = document.querySelector(".counter__number-3"), numberTop3 = number3.getBoundingClientRect().top, start3 = +number3.innerHTML, end3 = +number3.dataset.max;
+        window.addEventListener("scroll", (function onScroll() {
+            if (window.pageYOffset > numberTop3 - window.innerHeight / 1.2) {
+                this.removeEventListener("scroll", onScroll);
+                var interval = setInterval((function() {
+                    number3.innerHTML = ++start3;
+                    if (start3 == end3) clearInterval(interval);
+                }), 10);
+            }
+        }));
         window["FLS"] = true;
         isWebp();
         addTouchClass();

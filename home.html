@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220920102731">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220922113937">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,7 +128,7 @@
 			<section class="history">
 				<div class="history__container">
 					<div class="history__main-wrapper">
-						<div class="history__column _anim-items">
+						<div class="history__column">
 							<div class="history__content">
 								<h3 class="history__title title">Наша <span class="history__title-key title-key title-color">История</span></h3>
 								<p class="history__description">
@@ -143,22 +143,22 @@
 								<div class="history__counter counter">
 									<ul class="counter__list">
 										<li class="counter__item">
-											<span class="counter__number">93</span>
+											<span data-max="93" class="counter__number counter__number-1">0</span>
 											<span class="counter__position">Напитки</span>
 										</li>
 										<li class="counter__item">
-											<span class="counter__number">206</span>
+											<span data-max="206" class="counter__number counter__number-2">0</span>
 											<span class="counter__position">Еда</span>
 										</li>
 										<li class="counter__item">
-											<span class="counter__number">71</span>
+											<span data-max="71" class="counter__number counter__number-3">0</span>
 											<span class="counter__position">Закуски</span>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="history__column history__gallery _anim-items">
+						<div class="history__column history__gallery _anim-items _anim-no-hide">
 							<div class="history__gallery-block">
 								<div class="history__gallery-image history__image-ibg-1"><picture><source data-srcset="img/history/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="history__gallery-1" data-src="img/history/1.png" alt="Кофе"></picture>
 								</div>
@@ -173,7 +173,7 @@
 				<div class="history__order order">
 					<div data-prlx-mouse data-prlx-cy="10000000" class="order__background"></div>
 					<div class="order__container">
-						<div class="order__content _anim-items">
+						<div class="order__content _anim-items  _anim-no-hide">
 							<h3 class="order__title">Отпразднуйте в одном из
 								самых лучших ресторанов.</h3>
 							<p class="order__subtitle">Только в этом месяце бизнес-ланч от 250 ₽</p>
@@ -385,15 +385,15 @@
 					<div class="gallery-dishes__main-wrapper">
 						<h3 class="gallery-dishes__title title">Галерея <span class="title-color title-key">Блюд</span></h3>
 						<div class="gallery-dishes__content">
-							<div data-gallery class="gallery-dishes__column">
-								<a class="gallery-dishes__image-ibg gallery-dishes__image-big" href="img/gallery-dishes/1.png"><picture><source data-srcset="img/gallery-dishes/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/1.png" alt="Бокалы"></picture></a>
-								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/2.png"><picture><source data-srcset="img/gallery-dishes/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/2.png" alt="Чашка кофе"></picture></a>
-								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/3.png"><picture><source data-srcset="img/gallery-dishes/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/3.png" alt="Суп"></picture></a>
+							<div data-gallery class="gallery-dishes__column gallery-dishes__column-left _anim-items  _anim-no-hide">
+								<a class="gallery-dishes__image-ibg gallery-dishes__image-big" href="img/gallery-dishes/1.png"><picture><source data-srcset="img/gallery-dishes/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-dishes__image" data-src="img/gallery-dishes/1.png" alt="Бокалы"></picture></a>
+								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/2.png"><picture><source data-srcset="img/gallery-dishes/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-dishes__image" data-src="img/gallery-dishes/2.png" alt="Чашка кофе"></picture></a>
+								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/3.png"><picture><source data-srcset="img/gallery-dishes/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-dishes__image" data-src="img/gallery-dishes/3.png" alt="Суп"></picture></a>
 							</div>
-							<div data-gallery class="gallery-dishes__column">
-								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/2.png"><picture><source data-srcset="img/gallery-dishes/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/2.png" alt="Бокалы"></picture></a>
-								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/3.png"><picture><source data-srcset="img/gallery-dishes/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/3.png" alt="Чашка кофе"></picture></a>
-								<a class="gallery-dishes__image-ibg gallery-dishes__image-big" href="img/gallery-dishes/1.png"><picture><source data-srcset="img/gallery-dishes/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/gallery-dishes/1.png" alt="Бокалы"></picture></a>
+							<div data-gallery class="gallery-dishes__column gallery-dishes__column-right _anim-items  _anim-no-hide">
+								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/2.png"><picture><source data-srcset="img/gallery-dishes/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-dishes__image" data-src="img/gallery-dishes/2.png" alt="Бокалы"></picture></a>
+								<a class="gallery-dishes__image-ibg" href="img/gallery-dishes/3.png"><picture><source data-srcset="img/gallery-dishes/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-dishes__image" data-src="img/gallery-dishes/3.png" alt="Чашка кофе"></picture></a>
+								<a class="gallery-dishes__image-ibg gallery-dishes__image-big" href="img/gallery-dishes/1.png"><picture><source data-srcset="img/gallery-dishes/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-dishes__image" data-src="img/gallery-dishes/1.png" alt="Бокалы"></picture></a>
 							</div>
 						</div>
 					</div>
@@ -404,9 +404,9 @@
 					<div class="chefs__main-wrapper">
 						<h3 class="chefs__title title">Наши <span class="title-color">Повара</span></h3>
 						<div data-gallery class="chefs__content">
-							<a class="chefs__image-ibg" href="img/chefs/1.png"><picture><source data-srcset="img/chefs/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/chefs/1.png" alt="Шеф"></picture></a>
+							<a class="chefs__image-ibg" href="img/chefs/1.png"><picture><source data-srcset="img/chefs/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="chefs__image-ibg--left  _anim-items _anim-no-hide" data-src="img/chefs/1.png" alt="Шеф"></picture></a>
 							<a class="chefs__image-ibg" href="img/chefs/2.png"><picture><source data-srcset="img/chefs/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/chefs/2.png" alt="Шеф и пицца"></picture></a>
-							<a class="chefs__image-ibg" href="img/chefs/3.png"><picture><source data-srcset="img/chefs/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/chefs/3.png" alt="Шеф готовит"></picture></a>
+							<a class="chefs__image-ibg" href="img/chefs/3.png"><picture><source data-srcset="img/chefs/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="chefs__image-ibg--right _anim-items _anim-no-hide" data-src="img/chefs/3.png" alt="Шеф готовит"></picture></a>
 						</div>
 					</div>
 				</div>
@@ -428,7 +428,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220920102731"></script>
+	<script src="js/app.min.js?_v=20220922113937"></script>
 </body>
 
 </html>
